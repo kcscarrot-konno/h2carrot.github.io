@@ -5,14 +5,14 @@ desc "新しい記事を追加する ex) rake post title=\"title\" [date=\"2020-
 task :post do
   title = (ENV["title"] || "new").downcase.gsub(" ", "_")
   begin
-    written_date = ENV['date'] || Time.now.strftime("%Y-%m-%d")
-    Time.parse(written_date)
+    published_at = ENV['date'] || Time.now.strftime("%Y-%m-%d")
+    Time.parse(published_at)
   rescue
     abort "aborted: date format error. (#{ENV['date']})"
   end
 
   config = Jekyll.configuration
-  page_name = "#{written_date}-#{title}"
+  page_name = "#{published_at}-#{title}"
   fname =  File.join("_posts", "#{page_name}#{config['command']['post']['file_ext']}")
 
   fpath = File.join(config['source'], fname)
@@ -25,8 +25,9 @@ task :post do
 ---
 layout: post
 title: #{title}
-date: #{written_date}
-written_by: YOURNAME
+published_at: #{published_at}
+author: YOURNAME
+permalink: /#{published_at[0,4]}/#{published_at[5,2]}/#{published_at[8,2]}-#{title}
 categories: [tech, travel, cooking]
 tags: [Ruby, AWS, Azure, Keyboard]
 ---

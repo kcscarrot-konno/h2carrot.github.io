@@ -1,0 +1,118 @@
+body {
+  font-family: 'TitilliumText22LRegular', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 16px; 
+}
+
+/* --- START header.html ---*/
+#header-container {
+  flex-grow: 0;
+}
+#blog-title {
+  padding: 10px 0;
+  height: 120px;
+  background: linear-gradient(-135deg, #3F187E, #F781BF);
+  color: white;
+}
+
+#title {
+  padding: 13px 0px;
+}
+/* --- END header.html ---*/
+
+/* --- START aside.html ---*/
+#aside {
+  padding: 30px 0px 0px 20px;
+  background-color: pink;
+  height: 500px;
+  width: 300px;
+  float: right;
+  font-size: 16px;
+  text-align: left;
+  word-wrap: break-word;
+  flex-grow: 0;
+}
+#aside-inner {
+}
+.aside-recent-item {
+  padding-left: 10px;
+}
+.aside-link {
+  /*text-decoration: none; */
+  color: black;
+}
+/* --- END aside.html ---*/
+
+/* --- START footer.html ---*/
+#footer-container {
+  flex-grow: 0;
+}
+#wrapper {
+  float: left;
+  overflow: hidden;
+  width: 100%;
+}
+#footer-container p {
+  font-weight: bold;
+}
+/* --- END footer.html ---*/
+
+/* --- START share.html ---*/
+/* --- END share.html ---*/
+
+/* --- START post.html/home.html ---*/
+#container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#main {
+  margin: 5px 0px 0px 0px;
+  flex-grow: 3;
+  display: flex;
+  flex-direction: row;
+}
+
+#entry-container {
+  width: 100%;
+}
+/* --- END post.html/home.html ---*/
+/* --- START home.html ---*/
+.post-preview {
+  text-align: left;
+}
+.post-meta {
+}
+.post-title {
+}
+.post-content {
+}
+/* --- END home.html ---*/
+/* --- START post.html ---*/
+#entry {
+  text-align: left;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0px 30px;
+}
+.entry-date {
+  padding-top: 30px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.entry-title {
+  margin: 0px;
+} 
+.entry-inner {
+}
+.inner-content {
+}
+.inner-share {
+}
+
+.author {
+}
+/* --- END post.html ---*/
