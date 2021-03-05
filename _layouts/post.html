@@ -1,0 +1,26 @@
+{% include head.html %}
+<body>
+  <div id="container">
+    {% include header.html %}
+    <div id="main">
+      <div id="entry-container">
+        <div id="entry">
+
+        <div class='entry-date'>{{ page.published_at }}</div>
+        <h1 class='entry-title'>
+          <a href={{page.permalink}}> {{ page.title }}</a>
+        </h1>
+        <section class="entry-inner">
+          <div class="inner-content">
+            <div class='author'>書いた人: <a href='https://github.com/{{ page.author }}'>@{{ page.author }}</a></div>
+            {{ content }}
+          </div>
+          {% include share.html %}
+        </section>
+        </div>
+      </div>
+      {% include aside.html %}
+    </div>
+    {% include footer.html %}
+  </div>
+</body>

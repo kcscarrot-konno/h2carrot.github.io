@@ -1,0 +1,31 @@
+{% include head.html %}
+<body>
+  <div id="container">
+    {% include header.html %}
+    <div id="main">
+      <div id="entry-container">
+
+        <div class="col-lg-8 col-md-10 mx-auto">
+          {{ content }}
+          <!-- Home Post List -->
+          {% for post in site.posts %}
+
+          <article class="post-preview">
+            <p class="post-meta">{{ post.published_at | date: '%Y-%m-%d' }}&nbsp;&nbsp;@{{post.author}}</p>
+            <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+              <h1 class="post-title">{{ post.title }}</h1>
+            </a>
+
+            <div class="post-content">{{ post.excerpt | strip_html | truncatewords: 200 }}</div>
+
+          </article>
+
+          <hr>
+          {% endfor %}
+        </div>
+      </div>
+      {% include aside.html %}
+    </div>
+    {% include footer.html %}
+  </div>
+</body>
