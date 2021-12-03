@@ -13,8 +13,8 @@
     <div class="aside-categories">
       <p>:pencil: カテゴリ一覧</p>
       {% for category in site.categories %}
-      {% capture category_name %}{{ category | first }}{% endcapture %}
-      <div class="aside-categories-item"><a href="{{site.baseurl}}/categories/#{{category_name}}" class="aside-link">{{ category_name | capitalize }}</a></div>
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        <div class="aside-categories-item"><a href="{{site.baseurl}}/categories/index#{{category_name}}" class="aside-link">{{ category_name | capitalize }}</a></div>
       {% endfor %}
       </p>
     </div>

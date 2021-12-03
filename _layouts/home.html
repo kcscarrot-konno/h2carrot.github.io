@@ -19,7 +19,7 @@
             <p>
               Categories : 
               {% for category in post.categories %}
-                <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{ category | capitalize }}</a>
+                <a href="{{site.baseurl}}/categories/index#{{category|slugize}}">{{ category | capitalize }}</a>
               {% endfor %}
             </p>
 

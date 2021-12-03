@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /categories/
+permalink: /categories/index
 title: カテゴリ一覧
 ---
 
@@ -10,9 +10,9 @@ title: カテゴリ一覧
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <h3 class="category-head"><a name="{{ category_name }}">{{ category_name | capitalize }}</a></h3>
     {% for post in site.categories[category_name] %}
-    <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
+      <article class="archive-item">
+        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+      </article>
     {% endfor %}
   </div>
 {% endfor %}
