@@ -16,8 +16,14 @@
               <h1 class="post-title">{{ post.title }}</h1>
             </a>
 
-            <div class="post-content">{{ post.excerpt | strip_html | truncatewords: 200 }}</div>
+            <p>
+              Categories : 
+              {% for category in post.categories %}
+                <a href="{{site.baseurl}}/categories/index#{{category|slugize}}">{{ category | capitalize }}</a>
+              {% endfor %}
+            </p>
 
+            <div class="post-content">{{ post.excerpt | strip_html | truncatewords: 200 }}</div>
           </article>
 
           <hr>
