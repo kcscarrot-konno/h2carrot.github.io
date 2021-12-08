@@ -11,10 +11,11 @@
           {% for post in site.posts %}
 
           <article class="post-preview">
-                       <p class="post-meta">{{ post.published_at | date: '%Y-%m-%d' }}&nbsp;&nbsp;
+            <p class="post-meta">{{ post.published_at | date: '%Y-%m-%d' }}&nbsp;&nbsp;
             {% for author in post.author %}
               @{{author}}
-            {% endfor %}</p>
+            {% endfor %}
+            </p>
             <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
               <h1 class="post-title">{{ post.title }}</h1>
             </a>
