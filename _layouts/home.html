@@ -23,7 +23,10 @@
               {% endfor %}
             </p>
 
-            <div class="post-content">{{ post.excerpt | strip_html | truncatewords: 200 }}</div>
+            <div class="post-content">{{ post.excerpt | strip_html | truncatewords: 200 }}</div><br>
+              {% for tag in post.tags %}
+                <a href="{{site.baseurl}}/tags/index#{{tag | slugify}}">#{{ tag | capitalize }}</a>
+              {% endfor %}
           </article>
 
           <hr>

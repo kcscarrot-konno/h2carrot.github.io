@@ -18,5 +18,12 @@
       {% endfor %}
       </p>
     </div>
+    <div class="aside-tags">
+      <p>:pencil: タグ一覧</p>
+      {% for tag in site.tags%}
+        {% capture tag_name %}{{ tag | first }}{% endcapture %}
+        <a href="{{site.baseurl}}/tags/index#{{ tag_name}}" class="aside-link">#{{ tag_name | capitalize }}</a>
+      {% endfor %}
+    </div>
   </div>
 </aside>
