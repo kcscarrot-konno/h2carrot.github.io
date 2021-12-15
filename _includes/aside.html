@@ -14,7 +14,7 @@
       {% for category in site.categories %}
         {% capture category_name %}{{ category | first }}{% endcapture %}
         <div class="aside-categories-item">
-          <a href="{{site.baseurl}}/categories/index#{{category_name}}" class="aside-link">
+          ・<a href="{{site.baseurl}}/categories/index#{{category_name}}" class="aside-link">
             {{ category_name | capitalize }}
           </a>
         </div>
@@ -24,7 +24,7 @@
       <p>:pencil: タグ一覧</p>
       {% for tag in site.tags%}
         {% capture tag_name %}{{ tag | first }}{% endcapture %}
-        <a href="{{site.baseurl}}/tags/index#{{ tag_name}}" class="aside-link">#{{ tag_name | capitalize }}</a>
+          <a href="{{site.baseurl}}/tags/index#{{ tag_name}}" class="aside-link">#{{ tag_name | capitalize }}</a>
       {% endfor %}
     </div>
   </div>
