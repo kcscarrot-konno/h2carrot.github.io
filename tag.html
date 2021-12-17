@@ -10,7 +10,7 @@ title: タグ一覧
       <h3 class="category-head"><a name="{{ tag_name }}">{{ tag_name | capitalize }}</a></h3>
     {% for post in site.tags[tag_name] %}
       <article class="archive-item">
-        <h4><a href="{{ site.baseurl }}{{ post.url }}" class="tag-link">{{post.title}}</a></h4>
+        :carrot:<a href="{{ site.baseurl }}{{ post.url }}" class="tag-link">{{post.title}}</a>
       </article>
     {% endfor %}
   </div>

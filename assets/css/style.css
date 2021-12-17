@@ -172,7 +172,6 @@ body {
 .tag-link {
   text-decoration: none;
   color: black;
-  text-align: left;
 }
 .tag-link:hover {
   color: darkviolet;
