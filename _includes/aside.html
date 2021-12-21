@@ -8,7 +8,26 @@
       {% for post in site.posts limit:15 %}
       <div class="aside-recent-item">:carrot:&nbsp;<a href="{{ post.url }}" class="aside-link">{{ post.title }}</a></div>
       {% endfor %}
-      </p>
+    </div>
+    <div class="aside-categories">
+      <p>:pencil: カテゴリ一覧</p>
+      {% for category in site.categories %}
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        <div class="aside-categories-item">
+          <ul>
+            <li><a href="{{site.baseurl}}/categories/index#{{category_name}}" class="aside-link">
+              {{ category_name | capitalize }}
+            </a></li>
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="aside-tags">
+      <p>:pencil: タグ一覧</p>
+      {% for tag in site.tags%}
+        {% capture tag_name %}{{ tag | first }}{% endcapture %}
+        <a href="{{site.baseurl}}/tags/index#{{ tag_name}}" class="aside-link">#{{ tag_name | capitalize }}</a>
+      {% endfor %}
     </div>
   </div>
 </aside>

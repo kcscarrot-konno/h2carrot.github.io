@@ -8,11 +8,19 @@
 
         <div class='entry-date'>{{ page.published_at }}</div>
         <h1 class='entry-title'>
-          <a href={{page.permalink}}> {{ page.title }}</a>
+          <a href={{page.permalink}} class='post-link'> {{ page.title }}</a>
         </h1>
         <section class="entry-inner">
           <div class="inner-content">
-            <div class='author'>書いた人: <a href='https://github.com/{{ page.author }}'>@{{ page.author }}</a></div>
+            <div class='author'>書いた人: 
+            {% if page.author[0] == nil %}
+              <a href='https://github.com/{{ page.author }}' class='post-link'>@{{ page.author }}</a>
+            {% else %}
+              {% for author in page.author %}
+                <a href='https://github.com/{{ author }}'>@{{ author }}</a>
+              {% endfor %}
+            {% endif %}
+            </div>
             {{ content }}
           </div>
           {% include share.html %}
