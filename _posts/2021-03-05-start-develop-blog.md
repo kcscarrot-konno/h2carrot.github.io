@@ -4,8 +4,8 @@ title: 開発ブログを始めました
 published_at: 2021-03-05
 author: emorima
 permalink: /2021/03/05-start-develop-blog
-categories: [tech, travel, cooking]
-tags: [Ruby, AWS, Azure, Keyboard]
+categories: [Tech]
+tags: [Blog]
 ---
 
 こんにちは。H2開発グループのemorimaです。
