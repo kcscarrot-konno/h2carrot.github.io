@@ -194,7 +194,6 @@ body {
   margin: 5px 5px 2px 2px;
   width: 340px;
   height: 480px;
-  display: inline-grid;
   float: left;
 }
 .post-img{
@@ -267,6 +266,15 @@ body {
 }
 /* --- END post.html ---*/
 /* --- START category.html ---*/
+.archive-group{
+  text-align: left;
+  width: 100%;
+  display: inline-block;
+}
+
+.category-head{
+  margin: 10px 5px;
+}
 .category-link {
   text-decoration: none;
   color: black;
