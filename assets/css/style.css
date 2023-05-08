@@ -35,8 +35,8 @@ body {
 #blog-title {
   padding: 10px 0;
   height: 120px;
-  background: linear-gradient(-135deg, #3F187E, #F781BF);
-  color: white;
+  background: #d0d6d3;
+  color: black;
 }
 
 #title {
@@ -110,8 +110,8 @@ body {
 #footer-container {
   text-align: center;
   flex-grow: 0;
-  color: white;
-  background: linear-gradient(-135deg, #3F187E, #F781BF);
+  color: black;
+  background: #d0d6d3;
   padding: 10px 0;
   margin: 0;
 }
@@ -164,7 +164,7 @@ body {
   margin: 0;
   height: 300px;
   width: 40%;
-  background: linear-gradient(-135deg, rgba(63,24,126,0.5), rgba(247,129,191,0.5));
+  background: linear-gradient(-135deg, rgba(63,24,126,0.3), rgba(247,129,191,0.3));
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -204,7 +204,7 @@ body {
   align-items: center;
   text-align: center;
   font-weight: bold;
-  background: linear-gradient(-135deg, rgba(63,24,126,0.5), rgba(247,129,191,0.5));
+  background: linear-gradient(-135deg, rgba(63,24,126,0.3), rgba(247,129,191,0.3));
 }
 .post-image{
   text-align: center;
@@ -227,7 +227,7 @@ body {
 }
 .home-title-link{
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .home-link {
   text-decoration: none;
