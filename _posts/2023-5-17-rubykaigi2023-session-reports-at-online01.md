@@ -22,13 +22,13 @@ Rubyでなにかしらソースコードを書いた際は、同時にminitest�
 
 ## rspecで高速化する際に使用するgem
 minitestには並列テストの機能が備わっているのですが、rspecにはないのでgemを入れる必要があります。<br>
-rspecで並列テストをする際のgemとして紹介されたのが、parallel_testsとtest_queという2つのgem。<br>
+rspecで並列テストをする際のgemとして紹介されたのが、[parallel_tests](https://github.com/grosser/parallel_tests)と[test-queue](https://github.com/tmm1/test-queue)という2つのgem。<br>
 pararellel_testsの方はテストを事前に分割して回す方式になっています。<br>
 ただこれには弱点があり、事前に分割してしまうので、遅いテストがあるとそれに引っ張られて全体が遅くなってしまうことがあります。(下の図の例でいうとテストの個数はA、Bどちらとも5個ですが、Bは時間のかかるテストが含まれているため、結局すべて回すのに9分かかってしまいます。)<br>
 ![image](/assets/images/parallel_tests.png)<br>
-それに対し、test_queの方は事前分割ではなく、空いてるキューにテストを割り当てていくので無駄な時間が少ないという利点があります。<br>
-![image](/assets/images/test_que.png)<br>
-確かにこうして見てみるとtest_queの方がテストの高速化が見込めそう。<br>
+それに対し、test-queueの方は事前分割ではなく、空いてるキューにテストを割り当てていくので無駄な時間が少ないという利点があります。<br>
+![image](/assets/images/test_queue.png)<br>
+確かにこうして見てみるとtest-queueの方がテストの高速化が見込めそう。<br>
 
 ## まとめ
 記事冒頭でもお話しさせていただきましたが、私にとってはかなり難しい内容の話が多くついていくので精一杯のセッションがほとんどでした。まずは前提となるRubyの知識をもっと付けてよりセッションの内容を理解できるようにしたいなと思いました。
