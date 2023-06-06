@@ -5,7 +5,7 @@ published_at: 2023-06-06
 author: kcscarrot-ooki
 permalink: /2023/06/06-keebkaigi2023-reports
 categories: [Report, Tech]
-tags: [Ruby]
+tags: [Ruby, Keyboard]
 ---
 
 こんにちは。H2開発グループの大木です。  
