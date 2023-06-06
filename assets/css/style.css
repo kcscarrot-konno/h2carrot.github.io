@@ -26,6 +26,8 @@ body {
   font-size: small;
   font-weight: bold;
   padding: 3px;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 /* --- START header.html ---*/
 #header-container {
