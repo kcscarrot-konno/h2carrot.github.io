@@ -209,8 +209,13 @@ body {
 }
 .post-image{
   text-align: center;
-  width: 100%;
+  /*width: 100%;*/
   padding: 0 5px;
+
+  /* FIXME: 画像が枠からはみ出すのを防ぐ対応(応急処置) */
+  /* 枠に収まるように調整したい */
+  max-width: 100%;
+  max-height: 100%;
 }
 .post-meta {
   color: #808080;
