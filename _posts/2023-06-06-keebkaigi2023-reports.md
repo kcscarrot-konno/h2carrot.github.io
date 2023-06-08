@@ -6,6 +6,7 @@ author: kcscarrot-ooki
 permalink: /2023/06/06-keebkaigi2023-reports
 categories: [Report, Tech]
 tags: [Ruby, Keyboard]
+img: /assets/images/keebkaigi2023/keebkaigi2023_tenji_space1.jpg
 ---
 
 こんにちは。H2開発グループの大木です。  
