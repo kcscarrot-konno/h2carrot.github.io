@@ -83,7 +83,7 @@ KeebKaigi を開くきっかけの話や、
 
 
 ## HITCHHIKER'S GUIDE TO THE SELF MADE KEYBOARD COMMUNITY
-@takkanm さんの発表は、自作キーボードに関するコミュニティや、Youbube チャンネルなどを紹介する、
+@takkanm さんの発表は、自作キーボードに関するコミュニティや、Youtube チャンネルなどを紹介する、
 興味を持ち始めた人のためのガイドとなる内容でした。  
 
 これから自作キーボードを始める、もしくはもっと自作キーボードを深めたい人必見です。
