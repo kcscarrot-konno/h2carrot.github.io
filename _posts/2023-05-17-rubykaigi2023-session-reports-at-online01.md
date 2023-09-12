@@ -1,9 +1,9 @@
 ---
 layout: post
-title: RubyKaigi2023 セッションレポート@オンライン参加(齋藤)
-published_at: 2023-5-17
+title: RubyKaigi2023 セッションレポート@オンライン参加
+published_at: 2023-05-17
 author: saito-site
-permalink: /2023/5/17-rubykaigi2023-session-reports-at-online01
+permalink: /2023/05/17-rubykaigi2023-session-reports-at-online01
 categories: [Tech, Report]
 tags: [Ruby]
 ---
