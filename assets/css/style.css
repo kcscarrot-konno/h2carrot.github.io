@@ -163,7 +163,7 @@ body {
 .post-newest-img{
   margin: 0;
   height: 300px;
-  width: 40%;
+  width: 680px;
   background: linear-gradient(-135deg, rgba(63,24,126,0.3), rgba(247,129,191,0.3));
   display: table-cell;
   vertical-align: middle;
@@ -177,6 +177,12 @@ body {
 }
 .post-newest-title {
   margin: 5px 10px;
+}
+
+.post-newest-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .post-no-image{
