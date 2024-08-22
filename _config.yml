@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "KCS キャロット H2 Blog"
+title: "KCS キャロットBlog"
 description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://h2carrot.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://tech.carrot.co.jp/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ''
 github_username:  ''
 

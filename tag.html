@@ -7,12 +7,48 @@ title: タグ一覧
 {% for tag in site.tags %}
   <div class="archive-group">
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
-      <h3 class="category-head"><a name="{{ tag_name }}">{{ tag_name | capitalize }}</a></h3>
-    {% for post in site.tags[tag_name] %}
-      <article class="archive-item">
-        :carrot:<a href="{{ site.baseurl }}{{ post.url }}" class="tag-link">{{post.title}}</a>
-      </article>
-    {% endfor %}
+      <h3 class="category-head"><a name="{{ tag_name }}" class="tags">{{ tag_name | capitalize }}</a></h3>
+
+    <div class="post-articles">
+      {% for post in site.tags[tag_name] %}
+        <article class="post-preview">
+          <div class="post-img">
+            {% if post.img %}
+              <img src="{{ post.img }}" class="post-image" alt="{{ post.title }}" />
+            {% else %}
+              <div class="post-no-image">{{ post.title }}</div>
+            {% endif %}
+          </div>
+
+          <div class="post-content">
+            <p class="post-meta">{{ post.published_at | date: '%Y-%m-%d' }}</p>
+            <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"class="category-link">
+              <h2 class="post-title">{{ post.title }}</h2>
+            </a>
+            <p class="post-meta">
+              {% if post.author[0] == nil %}
+                @{{ post.author }}
+              {% else %}
+                {% for author in post.author %}
+                  @{{ author }}
+                {% endfor %}
+              {% endif %}
+            </p>
+            <p>
+              Categories :
+              {% for category in post.categories %}
+                <a href="{{ site.baseurl }}/categories/index#{{ category | slugify }}"class="categories">{{ category | capitalize }}</a>
+              {% endfor %}
+            </p>
+            <p>
+              {% for tag in post.tags %}
+                <a href="{{ site.baseurl }}/tags/index#{{ tag | slugify }}"class="tags">{{ tag | capitalize }}</a>
+              {% endfor %}
+            </p>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
   </div>
 {% endfor %}
 </div>

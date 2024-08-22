@@ -1,7 +1,7 @@
 {% include head.html %}
 <body>
+  {% include header.html %}
   <div id="container">
-    {% include header.html %}
     <div id="main">
       <div id="entry-container">
       <h2>{{page.title}}</h2>
@@ -9,7 +9,8 @@
           {{ content }}
         </div>
       </div>
+      {% include aside.html %}
     </div>
-    {% include footer.html %}
   </div>
+  {% include footer.html %}
 </body>
