@@ -5,7 +5,7 @@
     </div>
     <div class="aside-recent">
       <p class="aside-content-title">:pencil: 最近の投稿</p>
-      {% for post in site.posts limit:15 %}
+      {% for post in site.posts limit:5 %}
       <div class="aside-recent-item">
         <p class="post-meta">{{ post.published_at | date: '%Y-%m-%d' }}</p>
         <a href="{{ post.url }}" class="aside-link">{{ post.title }}</a>
