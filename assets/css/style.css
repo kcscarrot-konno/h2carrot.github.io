@@ -48,11 +48,6 @@ body {
 /* --- START aside.html ---*/
 #aside {
   padding-top: 30px;
-  /*
-  width: 300px;
-  float: right;
-  flex-grow: 0;
-  */
   font-size: 16px;
   text-align: left;
   word-wrap: break-word;
@@ -89,9 +84,6 @@ body {
 .aside-tags {
   font-size: 18px;
   font-weight: 700;
-}
-.aside-tags-item-container {
-/*  display: flex; */
 }
 .aside-tags-item {
   padding-left: 10px;
@@ -137,13 +129,6 @@ body {
   padding: 0 10px 0 10px;
 }
 
-/* 
-
- #entry-container {
-  width: 100%;
-}
- */
-
 /* --- END post.html/home.html ---*/
 /* --- START home.html ---*/
 .post-newest-preview {
@@ -158,9 +143,6 @@ body {
 .post-newest-img {
   margin: 0;
   background: linear-gradient(-135deg, rgba(63,24,126,0.3), rgba(247,129,191,0.3));
-  /*
-  display: table-cell;
-  */
   height: 300px;
   vertical-align: middle;
   text-align: center;
@@ -168,9 +150,6 @@ body {
 }
 .post-newest-content {
   height: 300px;
-  /*
-  display: table-cell;
-  */
 }
 .post-newest-content > div {
   padding: 5px 10px;
@@ -236,10 +215,8 @@ body {
   font-size: 20px;
 }
 .post-content {
-  /* height: 300px; */
   padding: 5px 10px;
   display: inline-block;
-  /* width: 80%; */
 }
 .home-title-link{
   text-decoration: none;
