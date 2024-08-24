@@ -6,7 +6,7 @@ author: kcscarrot-konno
 permalink: /2024/07/11-greeting-from-the-new-employee-konno
 categories: [Tech]
 tags: [Blog]
-img: /assets/images/greeting-from-the-new-employee-konno/thumbnail.png
+image: /assets/images/greeting-from-the-new-employee-konno/thumbnail.png
 ---
 
 はじめまして、H2開発グループの今野と申します。
