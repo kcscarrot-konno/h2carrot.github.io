@@ -47,16 +47,19 @@ body {
 
 /* --- START aside.html ---*/
 #aside {
-  padding: 30px 0px 0px 20px;
+  padding-top: 30px;
+  /*
   width: 300px;
   float: right;
+  flex-grow: 0;
+  */
   font-size: 16px;
   text-align: left;
   word-wrap: break-word;
-  flex-grow: 0;
   border-radius: 5px;
 }
-#aside-inner {
+#aside > div {
+  padding-left: 20px;
 }
 .aside-content-title{
   margin: 15px 0px 10px 0px;
@@ -130,24 +133,17 @@ body {
 /* --- END share.html ---*/
 
 /* --- START post.html/home.html ---*/
-#container {
-  text-align: center;
-  margin: 0 auto;
-  padding: 0 30px;
-  display: flex;
-  flex-direction: column;
-}
-
 #main {
-  margin: 5px 0px 0px 0px;
-  flex-grow: 3;
-  display: flex;
-  flex-direction: row;
+  padding: 0 10px 0 10px;
 }
 
-#entry-container {
+/* 
+
+ #entry-container {
   width: 100%;
 }
+ */
+
 /* --- END post.html/home.html ---*/
 /* --- START home.html ---*/
 .post-newest-preview {
@@ -155,26 +151,31 @@ body {
   padding: 0;
   border: solid 1px;
   border-radius: 5px;
-  margin: 5px 5px 2px 2px;
+  width: 100%;
   height: 300px;
   display: table;
-  width: 100%;
 }
-.post-newest-img{
+.post-newest-img {
   margin: 0;
-  height: 300px;
-  width: 680px;
   background: linear-gradient(-135deg, rgba(63,24,126,0.3), rgba(247,129,191,0.3));
+  /*
   display: table-cell;
+  */
+  height: 300px;
   vertical-align: middle;
   text-align: center;
   font-weight: bold;
 }
 .post-newest-content {
   height: 300px;
-  padding: 5px 10px;
+  /*
   display: table-cell;
+  */
 }
+.post-newest-content > div {
+  padding: 5px 10px;
+}
+
 .post-newest-title {
   margin: 5px 10px;
 }
@@ -189,19 +190,27 @@ body {
   text-align: center;
   width: 100%;
 }
-.post-articles{
-  width: 100%;
-}
+
 .post-preview{
+  margin-top: 8px;
   text-align: left;
-  padding: 0;
   border: solid 1px;
   border-radius: 5px;
-  margin: 5px 5px 2px 2px;
-  width: 340px;
   height: 480px;
-  float: left;
 }
+
+@media screen and (min-width: 64em) {
+  .post-articles .post-wrap:not(:nth-child(3n)) .post-preview {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 35.5em) and (max-width: 63.99em) {
+  .post-articles .post-wrap:not(:nth-child(2n)) .post-preview {
+    margin-right: 8px;
+  }  
+}
+
 .post-img{
   margin: 0;
   height: 200px;
@@ -227,10 +236,10 @@ body {
   font-size: 20px;
 }
 .post-content {
-  height: 300px;
+  /* height: 300px; */
   padding: 5px 10px;
   display: inline-block;
-  width: 100%;
+  /* width: 80%; */
 }
 .home-title-link{
   text-decoration: none;
@@ -259,7 +268,8 @@ body {
 .entry-title {
   margin: 0px;
 } 
-.entry-inner {
+.entry-inner img {
+  max-width: 100%;
 }
 .inner-content {
 }
