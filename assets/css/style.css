@@ -147,7 +147,17 @@ body {
   vertical-align: middle;
   text-align: center;
   font-weight: bold;
+  position: relative;
 }
+
+.post-newest-img .post-no-image {
+  position: absolute;
+  font-size: 28px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
 .post-newest-content {
   height: 300px;
 }
