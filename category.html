@@ -12,8 +12,9 @@ title: カテゴリ一覧
         <a name="{{ category_name }}" class="category-head">:carrot:{{ category_name | capitalize }}</a>
       </h3>
 
-      <div class="post-articles">
+      <div class="post-articles pure-g">
         {% for post in site.categories[category_name] %}
+        <div class="post-wrap pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3">
           <article class="post-preview">
             <div class="post-img">
               {% if post.img %}
@@ -50,6 +51,7 @@ title: カテゴリ一覧
               </p>
             </div>
           </article>
+        </div>
         {% endfor %}
       </div>
     </div>
