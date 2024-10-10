@@ -6,7 +6,7 @@ author: kcscarrot-sakata
 permalink: /2023/09/05-workshop_1st_year
 categories: [education, workshop]
 tags: [Blog, WorkShop]
-img: /assets/images/workshop_1st_year_2023/thumb.png
+image: /assets/images/workshop_1st_year_2023/thumb.png
 ---
 
 # ～ ワークショップ ～

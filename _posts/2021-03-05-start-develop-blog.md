@@ -6,7 +6,7 @@ author: emorima
 permalink: /2021/03/05-start-develop-blog
 categories: [Tech]
 tags: [Blog]
-img: /assets/images/logo.png
+image: /assets/images/logo.png
 ---
 
 こんにちは。H2開発グループのemorimaです。

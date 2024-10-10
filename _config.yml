@@ -31,9 +31,16 @@ highlighter: rouge
 plugins:
   - jekyll-feed
   - jemoji
+  - jekyll-seo-tag
 command:                # Rakeコマンド用定義
   post:                 # 新しい記事作成時
     file_ext: ".md"     # ファイル拡張子
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/ogp.png
+      site_title: "KCS キャロットBlog"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
