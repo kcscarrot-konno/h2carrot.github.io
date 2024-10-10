@@ -9,12 +9,13 @@ title: タグ一覧
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
       <h3 class="category-head"><a name="{{ tag_name }}" class="tags">{{ tag_name | capitalize }}</a></h3>
 
-    <div class="post-articles">
+    <div class="post-articles pure-g">
       {% for post in site.tags[tag_name] %}
+      <div class="post-wrap pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3">
         <article class="post-preview">
           <div class="post-img">
-            {% if post.img %}
-              <img src="{{ post.img }}" class="post-image" alt="{{ post.title }}" />
+            {% if post.image != '/assets/images/ogp.png' %}
+              <img src="{{ post.image }}" class="post-image" alt="{{ post.title }}" />
             {% else %}
               <div class="post-no-image">{{ post.title }}</div>
             {% endif %}
@@ -47,6 +48,7 @@ title: タグ一覧
             </p>
           </div>
         </article>
+      </div>
       {% endfor %}
     </div>
   </div>
