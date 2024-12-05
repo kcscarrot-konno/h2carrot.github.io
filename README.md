@@ -88,3 +88,45 @@ rougify style thankful_eyes  > assets/css/syntax.css
 ```
 
 [Preview Page](https://spsarolkar.github.io/rouge-theme-preview/)
+
+### 座談会記事向けのスタイルについて
+
+座談会記事など、会話ベースの記事に利用することを想定したスタイルを用意しています。
+
+実際の記述と表示の例は[RubyKaigi 2024の座談会記事](_posts/2024-07-19-rubykaigi2024.md) を参考にしてください。
+
+以下のように、2階層の箇条書きで記述していきます。
+
+```
+{:.talk-paragraph}
+* **発言者A**{:.speaker}
+    * こんにちは！
+* **発言者B**{:.speaker}
+    * こんにちは！
+    * 今日は天気がいいですね。
+
+{:.talk-paragraph}
+* **発言者B**{:.speaker}
+    * おはようございます。
+```
+
+* 箇条書き段落の冒頭(もしくは末尾)に `{:.talk-paragraph}` と記述することで会話の段落であることを宣言する
+* 箇条書き1段目に `**<発言者名>**{:.speaker}` の書式で発言者の名前を記載する
+* 箇条書き2段目に発言内容を記載する
+    * 項目を分割することで、同じ発言者による別の文章として表現することができます
+* 段落を分ける場合は空行の後に再び `{:.talk-paragraph}` を記述し、同様に箇条書きで内容を記載していく
+
+#### 発言者の識別用スタイル
+
+`**<発言者名>**{:.speaker .orange}` 等と記載することで発言者名に色を付けることができます。発言者の識別用に利用してください。
+
+用意している色のクラスは以下のとおりです。
+* `red`<span style="color: #DD1155;">■</span>
+* `pink`<span style="color: #CB48B7;">■</span>
+* `orange`<span style="color: #FF773D;">■</span>
+* `yellow`<span style="color: #FABC3C;">■</span>
+* `green`<span style="color: #58A838;">■</span>
+* `light-blue`<span style="color: #00B9AE;">■</span>
+* `blue`<span style="color: #1A73C7;">■</span>
+* `purple`<span style="color: #7A306C;">■</span>
+* `black`<span style="color: #494947;">■</span> (デフォルト)

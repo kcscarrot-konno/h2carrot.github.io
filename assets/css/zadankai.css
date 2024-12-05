@@ -1,0 +1,43 @@
+/* 座談会記事用CSS */
+
+ul.talk-paragraph {
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin-bottom: 1.2em;
+}
+
+ul.talk-paragraph > li {
+  display: flex;
+  padding-bottom: 0.6em;
+}
+
+ul.talk-paragraph ul {
+  display: flex;
+}
+
+ul.talk-paragraph ul {
+  flex-direction: column;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.speaker {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 0.6em;
+}
+
+ul.talk-paragraph strong.speaker::after {
+  content: ":";
+}
+
+/* 名前の色分け用カラー */
+.speaker.red { color: #DD1155; }
+.speaker.pink { color: #CB48B7; }
+.speaker.orange { color: #FF773D; }
+.speaker.yellow { color: #FABC3C; }
+.speaker.green { color: #58A838; }
+.speaker.light-blue { color: #00B9AE; }
+.speaker.blue { color: #1A73C7; }
+.speaker.purple { color: #7A306C; }
+.speaker, .speaker.black { color: #494947; } /* デフォルト色 */
