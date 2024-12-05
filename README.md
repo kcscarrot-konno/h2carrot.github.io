@@ -130,3 +130,23 @@ rougify style thankful_eyes  > assets/css/syntax.css
 * `blue`<span style="color: #1A73C7;">■</span>
 * `purple`<span style="color: #7A306C;">■</span>
 * `black`<span style="color: #494947;">■</span> (デフォルト)
+
+#### TSVから会話パートのmarkdownを生成する
+
+`tools/tsv2zadankai.rb` というツールを用意しています。
+
+以下のように実行するとzadankai.tsvと同じディレクトリにzadankai.mdが生成されます。
+
+生成された内容を記事ファイルにコピーして使用することができます。
+
+```
+tools/tsv2zadankai.rb zadankai.tsv # => zadankai.mdが生成される
+```
+
+TSVファイルの構成は[サンプルのTSVファイル](tools/tsv2zadankai_sample.tsv)を参考にしてください。
+
+* `config` で始まる行は設定情報を記述する
+    * `config\t<色クラス名>\t<設定する発言者名>` で発言者に設定する色のクラスを設定できます
+        * 同じ行のセルに続けて記載することで複数人指定することもできます
+* `<発言者名>\t<発言内容>` で発言内容を記述する
+    * 発言者名を空にすると、直近の発言者が続けて発言した扱いとなります
