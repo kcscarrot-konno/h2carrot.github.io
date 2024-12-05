@@ -1,0 +1,18 @@
+config	red		
+config	pink		
+config	orange	発言者A	発言者B
+config	yellow		
+config	green	発言者C	
+config	light-blue		
+config	blue	発言者D	
+config	purple		
+config	black		
+			
+発言者A	こんにちは！		
+発言者C	こんにちは！		
+	今日はいい天気ですね		
+発言者B	そうですね		
+発言者B	こんな日は散歩でもしたいですね		
+			
+発言者D	こんにちは！		
+発言者E	こんにちは！		
