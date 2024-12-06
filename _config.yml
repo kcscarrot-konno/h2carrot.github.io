@@ -63,3 +63,4 @@ defaults:
 #   - vendor/ruby/
 exclude:
     - tools/
+timezone: Asia/Tokyo
