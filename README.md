@@ -131,6 +131,14 @@ rougify style thankful_eyes  > assets/css/syntax.css
 * `purple`<span style="color: #7A306C;">■</span>
 * `black`<span style="color: #494947;">■</span> (デフォルト)
 
+#### インタビュー記事向けのスタイル
+
+発言者名の代わりに `* **<発言者名>**{:.interviewer}` と記述すると、発言者と発言内容の部分にインタビュアー用のスタイルが適用されます。通常の発言者との違いは、文字色(発言者用スタイルのblackよりも暗めの黒)と発言内容も太字になる点です。
+
+インタビュアーを特定しない場合は `* **――**{:.interviewer}` のように記述するとそれっぽい雰囲気が出るかと思います。
+
+実際の記述と表示の例は[2024年度の新人インタビュー記事](_posts/2025-01-07-rookies_interview_2024.md) を参考にしてください。
+
 #### TSVから会話パートのmarkdownを生成する
 
 `tools/tsv2zadankai.rb` というツールを用意しています。

@@ -7,7 +7,8 @@ config	light-blue
 config	blue	発言者D	
 config	purple		
 config	black		
-			
+config	interviewer	――	
+
 発言者A	こんにちは！		
 発言者C	こんにちは！		
 	今日はいい天気ですね		
@@ -16,3 +17,7 @@ config	black
 			
 発言者D	こんにちは！		
 発言者E	こんにちは！		
+
+――	好きな食べ物は何ですか？		
+発言者E	焼肉が好きです。		
+発言者A	私は寿司が好きです。		
