@@ -21,14 +21,23 @@ ul.talk-paragraph ul {
   padding-inline-start: 0;
 }
 
-.speaker {
+.speaker, .interviewer {
   display: inline-block;
   white-space: nowrap;
   padding-right: 0.6em;
 }
 
+.interviewer {
+  content: none;
+}
+
 ul.talk-paragraph strong.speaker::after {
   content: ":";
+}
+
+ul.talk-paragraph strong.interviewer+ul {
+  font-weight: bold;
+  color: #111111;
 }
 
 /* 名前の色分け用カラー */
@@ -41,3 +50,4 @@ ul.talk-paragraph strong.speaker::after {
 .speaker.blue { color: #1A73C7; }
 .speaker.purple { color: #7A306C; }
 .speaker, .speaker.black { color: #494947; } /* デフォルト色 */
+.interviewer { color: #111111; } /* インタビュアー専用色 */
