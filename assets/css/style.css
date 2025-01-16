@@ -258,6 +258,13 @@ body {
 .entry-inner img {
   max-width: 100%;
 }
+
+blockquote {
+  border-left: solid 3px #ffa500;
+  margin-left: 0;
+  padding-left: 1em;
+}
+
 .inner-content {
 }
 .inner-share {
