@@ -92,8 +92,12 @@ module Tsv2Zadankai
 
       if row[0] && previous_speaker != row[0]
         # 発言者の切り替わりを検知
-        style = config.include?(row[0]) ? ".#{config[row[0]]}" : ''
-        md_rows << "* **#{row[0]}**{:.speaker #{style}}"
+        if config[row[0]] == 'interviewer'
+          md_rows << "* **#{row[0]}**{:.interviewer}"
+        else
+          style = config.include?(row[0]) ? ".#{config[row[0]]}" : ''
+          md_rows << "* **#{row[0]}**{:.speaker #{style}}"
+        end
         previous_speaker = row[0]
       end
 
