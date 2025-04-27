@@ -7,6 +7,8 @@ KCS Carrot Corp. H2 GitHub Pagesです。
 
 ### 環境構築
 
+#### ローカル環境で実行する
+
 * git cloneして、bundle installする
 ```
 $git clone git@github.com:YOURNAME/h2carrot.github.io
@@ -20,6 +22,26 @@ $bundle install
 ```
 $bundle exec jekyll serve --watch [--port port] [--host 0.0.0.0]
 ```
+* `http://localhost:4000` をブラウザで開く
+
+#### Dockerコンテナ上で実行する
+
+* git clone する
+```
+$git clone git@github.com:YOURNAME/h2carrot.github.io
+```
+
+* Dockerイメージをbuildする
+```
+$cd h2carrot.github.io
+$docker image build -t [任意の名称] .
+```
+
+* コンテナを起動する
+```
+$docker container run -it -p 4000:4000 [buildの際につけたイメージ名]
+```
+
 * `http://localhost:4000` をブラウザで開く
 
 ### 構成
