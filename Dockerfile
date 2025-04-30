@@ -1,6 +1,8 @@
 FROM ruby:3.1.4
 
-WORKDIR /jekyll
+WORKDIR /app
+
+VOLUME /app
 
 RUN apt-get update
 

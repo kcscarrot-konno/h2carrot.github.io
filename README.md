@@ -34,15 +34,21 @@ $git clone git@github.com:YOURNAME/h2carrot.github.io
 * Dockerイメージをbuildする
 ```
 $cd h2carrot.github.io
-$docker image build -t [任意の名称] .
+$docker compose build
 ```
 
 * コンテナを起動する
 ```
-$docker container run -it -p 4000:4000 [buildの際につけたイメージ名]
+$docker compose up
 ```
 
 * `http://localhost:4000` をブラウザで開く
+
+※ コンテナへ入りたい場合  
+docker-compose.yml ファイルが存在する場所で以下コマンドを実行  
+```
+docker compose exec app bash
+```
 
 ### 構成
 
