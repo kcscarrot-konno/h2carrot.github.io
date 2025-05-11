@@ -5,6 +5,8 @@ KCS Carrot Corp. H2 GitHub Pagesです。
 
 [jekyll](http://jekyllrb-ja.github.io/) を使用しています。
 
+このリポジトリを各自のアカウントにforkして作業してください。
+
 ### 環境構築
 
 #### ローカル環境で実行する
