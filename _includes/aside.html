@@ -3,6 +3,11 @@
     <div class="aside-home">
       <a href="{{ site.url }}" class="aside-link">:house: Home</a>
     </div>
+    <div class="aside-company">
+      <a href="https://www.carrot.co.jp/" class="aside-link">
+        <img src="{{ '/assets/images/logo-small.png' }}" alt="KCS Carrot logo">株式会社ケーシーエスキャロット
+      </a>
+    </div>
     <div class="aside-recent">
       <p class="aside-content-title">:pencil: 最近の投稿</p>
       {% for post in site.posts limit:5 %}
