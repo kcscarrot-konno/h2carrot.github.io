@@ -60,6 +60,17 @@ body {
   margin: 15px 0px 10px 0px;
   border-bottom: solid 1px black;
 }
+
+.aside-company{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.aside-company img {
+  max-width: 20px;
+  margin: 5px 5px -3px 0;
+}
+
 .aside-recent {
   font-size: 18px;
   font-weight: 700;
