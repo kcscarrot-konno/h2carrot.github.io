@@ -40,8 +40,7 @@ end
 # Usage: rake advcal title="title" day=1
 desc "新しいアドベントカレンダー記事を追加する ex) rake advcal title=\"title\" day=1"
 task :advcal do
-  # TODO アドベントカレンダーのURL
-  calendar_url = "http://carrot.co.jp/TBD"
+  calendar_url = "https://qiita.com/advent-calendar/2025/kcscarrot"
 
   day = ENV['day'].to_i
 
