@@ -64,29 +64,29 @@ task :advcal do
   end
 
   File.open(fpath, "w")  do |fd|
-    fd.puts <<-EOS
----
-layout: post
-title: #{title}
-published_at: #{published_at}
-author: YOURNAME
-permalink: /#{published_at[0,4]}/#{published_at[5,2]}/#{published_at[8,2]}-#{title}
-categories: [tech, travel, cooking]
-tags: [アドベントカレンダー]
-image: /assets/images/advent_calendar_2025.jpg
----
+    fd.puts <<~EOS
+      ---
+      layout: post
+      title: #{title}
+      published_at: #{published_at}
+      author: YOURNAME
+      permalink: /#{published_at[0,4]}/#{published_at[5,2]}/#{published_at[8,2]}-#{title}
+      categories: [tech, travel, cooking]
+      tags: [アドベントカレンダー]
+      image: /assets/images/advent_calendar_2025.jpg
+      ---
 
-こんにちは、[YOURGROUP]の[YOURNAME]です。
+      こんにちは、[YOURGROUP]の[YOURNAME]です。
 
-この記事は、[ケーシーエスキャロット Advent Calendar #{Time.now.strftime("%Y")}](#{calendar_url})の#{day}日目の記事です。
+      この記事は、[ケーシーエスキャロット Advent Calendar #{Time.now.strftime("%Y")}](#{calendar_url})の#{day}日目の記事です。
 
-[ここに記事本文を書く]
+      [ここに記事本文を書く]
 
-:christmas_tree: :santa: :christmas_tree: :santa: :christmas_tree:
+      :christmas_tree: :santa: :christmas_tree: :santa: :christmas_tree:
 
-ケーシーエスキャロット Advent Calendar #{Time.now.strftime("%Y")} の他の記事は[アドベントカレンダーのページ](#{calendar_url})からアクセスすることができます。
+      ケーシーエスキャロット Advent Calendar #{Time.now.strftime("%Y")} の他の記事は[アドベントカレンダーのページ](#{calendar_url})からアクセスすることができます。
 
-他の記事もぜひ楽しんでください！
+      他の記事もぜひ楽しんでください！
     EOS
   end
 
