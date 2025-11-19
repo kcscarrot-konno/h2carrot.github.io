@@ -52,6 +52,16 @@ docker-compose.yml ファイルが存在する場所で以下コマンドを実�
 docker compose exec app bash
 ```
 
+#### 未来日付の投稿を表示させる場合
+`--future true` オプションを付けて、`jekyll serve` を実行する
+```
+$bundle exec jekyll serve --future true --watch [--port port] [--host 0.0.0.0]
+```
+
+Dockerの場合は、`docker-compose.override.yml` のコメントアウトを外してから
+`docker compose up` を実行すると表示することができる
+
+
 ### 構成
 
 #### トップ画面
