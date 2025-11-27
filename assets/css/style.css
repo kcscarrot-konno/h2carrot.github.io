@@ -286,6 +286,13 @@ blockquote {
 .post-link {
   text-decoration: none;
 }
+
+code.language-plaintext.highlighter-rouge {
+  background-color: #f8f8f8;
+  padding: 2px 5px;
+  border: #ddd solid 1px;
+}
+
 /* --- END post.html ---*/
 /* --- START category.html ---*/
 .archive-group{
