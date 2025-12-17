@@ -18,8 +18,7 @@ H2開発グループの y-suzuki です！
 今年で **6回目** となり、Rubyist で知らぬものはいないほどの大規模イベントとなりました！
 
 > Rubyist とは?<br>
-> Ruby をこよなく愛する者ということから、<br>
-> Ruby好きな人達の事を Ruby + est(最上を表す) から、Rubyist と呼ぶようになりました。
+> [https://scrapbox.io/ruby-no-kai/Rubyist](https://scrapbox.io/ruby-no-kai/Rubyist)
 
 <img alt="Kaigi on Rails 2025ロゴ" src="/assets/images/kaigi-on-rails2025/floor-map.png">
 
