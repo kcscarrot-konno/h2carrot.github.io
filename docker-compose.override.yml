@@ -1,4 +1,0 @@
-#services:
-#  app:
-#    # 未来日付の投稿を表示させる場合
-#    command: "bundle exec jekyll serve --future true --watch --host 0.0.0.0"

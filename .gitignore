@@ -5,3 +5,4 @@ _site
 vendor
 # for sample output
 tools/tsv2zadankai_sample.md
+docker-compose.override.yml
