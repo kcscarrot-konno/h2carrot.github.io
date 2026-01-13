@@ -9,27 +9,15 @@ tags: [Ruby, Rails]
 image: /assets/images/kaigi-on-rails2025/og-image.png
 ---
 
+<img alt="Kaigi on Rails 2025ロゴ" src="/assets/images/kaigi-on-rails2025/og-image.png" width="500px">
+
 こんにちは あるいは こんばんは。<br>
 H2開発グループの y-suzuki です！
 
 # Kaigi on Rails 2025 開催！！
 9/26（金）と 9/27（土）の2日間に渡って開催された **Kaigi on Rails 2025** に行ってきました！
 
-今年で **6回目** となり、Rubyist で知らぬものはいないほどの大規模イベントとなりました！
-
-> Rubyist とは?<br>
-> [https://scrapbox.io/ruby-no-kai/Rubyist](https://scrapbox.io/ruby-no-kai/Rubyist)
-
-<img alt="Kaigi on Rails 2025ロゴ" src="/assets/images/kaigi-on-rails2025/floor-map.png">
-
-**これが、会場のフロアマップです！**
-
-・・・
-
-・・・
-
-そして、普段から写真撮る習慣がないので、写真はここで終わりです！<br>
-※ 完全に撮るの忘れてました・・・。それだけ、Kaigi on Rails の内容が凄かった証拠です（笑）
+今年で **6回目** となり、[Rubyist](https://scrapbox.io/ruby-no-kai/Rubyist) で知らぬものはいないほどの大規模イベントとなりました！
 
 # 自己紹介
 10年以上働いている社員です！<br>
@@ -46,7 +34,7 @@ H2開発グループの y-suzuki です！
 最後に一番試してみたいことで締めくくろうかと思います！
 
 ## 試してみたいこと その1: Railsの機能関連
-今回は、FormObject や Turbo などの話題が多かったので、<br>
+今回は、FormObject や Hotwire などの話題が多かったので、<br>
 ちょっと触ってみたいなーと思いました！
 
 自分専用のRailsアプリも作っているのですが、<br>
