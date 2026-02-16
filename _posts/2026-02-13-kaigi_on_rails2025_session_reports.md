@@ -3,7 +3,7 @@ layout: post
 title: Kaigi on Rails2025 初参加レポート
 published_at: 2026-02-13
 author: t-suzuki-carrot
-permalink: /2026/01/06-kaigi_on_rails2025_session_reports
+permalink: /2026/02/13-kaigi_on_rails2025_session_reports
 categories: [Tech, Report]
 tags: [Ruby]
 ---
