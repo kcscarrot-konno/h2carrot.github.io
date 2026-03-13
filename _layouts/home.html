@@ -9,7 +9,7 @@
           <!-- Home Post List -->
           <!-- newest-->
           <div class="pure-u-1">
-            <article class="post-newest-preview">
+            <article class="post-newest-preview" class="pure-g">
               <div class="post-newest-img pure-u-md-1-2">
                 {% if site.posts.first.image != '/assets/images/ogp.png' %}
                   <img src="{{ site.posts.first.image }}" alt="{{ site.posts.first.title }}" />
@@ -19,37 +19,33 @@
               </div>
   
               <div class="post-newest-content pure-u-md-1-2">
-                <div>
-                  <p class="post-meta">{{ site.posts.first.published_at | date: '%Y-%m-%d' }}</p>
-                  <p class="post-title">
+                <p class="post-meta">{{ site.posts.first.published_at | date: '%Y-%m-%d' }}</p>
+                <p class="post-title">
                   <a href="{{ site.posts.first.url | prepend: site.baseurl | replace: '//', '/' }}" class="home-link">
-                    <h1 class="post-newest-title">{{ site.posts.first.title }}</h1>
+                    <h2 class="post-newest-title">{{ site.posts.first.title }}</h2>
                   </a>
-                  <p class="post-meta">
-                    {% if site.posts.first.author[0] == nil %}
-                      @{{ site.posts.first.author }}
-                    {% else %}
-                      {% for author in site.posts.first.author %}
-                        @{{ author }}
-                      {% endfor %}
-                    {% endif %}
-                  </p>
-    
-                  <p>
-                      Categories :
-                      {% for category in site.posts.first.categories %}
-                        <a href="{{ site.baseurl }}/categories/index#{{ category | slugify }}"class="categories">{{ category | capitalize }}</a>
-                      {% endfor %}
-                    </p>
-    
-                    <p>{{ site.posts.first.excerpt | strip_html | truncatewords: 200 }}</p>
-    
-                    <p>
-                      {% for tag in site.posts.first.tags %}
-                         <a href="{{ site.baseurl }}/tags/index#{{ tag | slugify }}"class="tags">{{ tag | capitalize }}</a>
-                      {% endfor %}
-                    </p>  
-                </div>
+                </p>
+                <p class="post-meta">
+                  {% if site.posts.first.author[0] == nil %}
+                    @{{ site.posts.first.author }}
+                  {% else %}
+                    {% for author in site.posts.first.author %}
+                      @{{ author }}
+                    {% endfor %}
+                  {% endif %}
+                </p>
+                <p>
+                  Categories :
+                  {% for category in site.posts.first.categories %}
+                    <a href="{{ site.baseurl }}/categories/index#{{ category | slugify }}"class="categories">{{ category | capitalize }}</a>
+                  {% endfor %}
+                </p>
+                <div class="post-newest-intro">{{ site.posts.first.excerpt | strip_html }}</div>
+                <div class="post-newest-tag">
+                  {% for tag in site.posts.first.tags %}
+                      <a href="{{ site.baseurl }}/tags/index#{{ tag | slugify }}"class="tags">{{ tag | capitalize }}</a>
+                  {% endfor %}
+                </div>  
               </div>
             </article>
           </div>

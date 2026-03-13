@@ -170,10 +170,16 @@ body {
 }
 
 .post-newest-content {
+  box-sizing: border-box;
   height: 300px;
-}
-.post-newest-content > div {
   padding: 5px 10px;
+}
+
+@media screen and (min-width: 47em) {
+  .post-newest-content {
+    /* Firefoxの場合だけ、50%だと崩れるので苦肉の策 */
+    width: 49.3%;
+  }
 }
 
 .post-newest-title {
@@ -184,6 +190,26 @@ body {
   height: 100%;
   width: 100%;
   object-fit: contain;
+}
+
+.post-newest-intro {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+}
+
+@media screen and (min-width: 83em) {
+  .post-newest-intro {
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+  }
+}
+
+.post-newest-tag {
+  margin-top: 8px;
 }
 
 .post-no-image{
