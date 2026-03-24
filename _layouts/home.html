@@ -11,11 +11,13 @@
           <div class="pure-u-1">
             <article class="post-newest-preview">
               <div class="post-newest-img pure-u-md-1-2">
-                {% if site.posts.first.image != '/assets/images/ogp.png' %}
-                  <img src="{{ site.posts.first.image }}" alt="{{ site.posts.first.title }}" />
-                {% else %}
-                  <div class="post-no-image">{{ site.posts.first.title }}</div>
-                {% endif %}
+                <a href="{{ site.posts.first.url | prepend: site.baseurl | replace: '//', '/' }}">
+                  {% if site.posts.first.image != '/assets/images/ogp.png' %}
+                    <img src="{{ site.posts.first.image }}" alt="{{ site.posts.first.title }}" />
+                  {% else %}
+                    <div class="post-no-image">{{ site.posts.first.title }}</div>
+                  {% endif %}
+                </a>
               </div>
   
               <div class="post-newest-content pure-u-md-1-2">
@@ -60,11 +62,13 @@
                 <div class="post-wrap pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3">
                   <article class="post-preview">
                     <div class="post-img">
-                      {% if post.image != '/assets/images/ogp.png' %}
-                        <img src="{{ post.image }}" class="post-image" alt="{{ post.title }}" />
-                      {% else %}
-                        <div class="post-no-image">{{ post.title }}</div>
-                      {% endif %}
+                      <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+                        {% if post.image != '/assets/images/ogp.png' %}
+                          <img src="{{ post.image }}" class="post-image" alt="{{ post.title }}" />
+                        {% else %}
+                          <div class="post-no-image">{{ post.title }}</div>
+                        {% endif %}
+                      </a>
                     </div>
                     <div class="post-content">
                       <p class="post-meta">{{ post.published_at | date: '%Y-%m-%d' }}</p>

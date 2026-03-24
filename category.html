@@ -17,11 +17,13 @@ title: カテゴリ一覧
         <div class="post-wrap pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3">
           <article class="post-preview">
             <div class="post-img">
-              {% if post.image != '/assets/images/ogp.png' %}
-                <img src="{{ post.image }}" class="post-image" alt="{{ post.title }}" />
-              {% else %}
-                <div class="post-no-image">{{ post.title }}</div>
-              {% endif %}
+              <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+                {% if post.image != '/assets/images/ogp.png' %}
+                  <img src="{{ post.image }}" class="post-image" alt="{{ post.title }}" />
+                {% else %}
+                  <div class="post-no-image">{{ post.title }}</div>
+                {% endif %}
+              </a>
             </div>
 
             <div class="post-content">
